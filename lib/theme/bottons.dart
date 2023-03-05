@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iso_app/theme/theme.dart';
 import 'package:iso_app/ui/customer/register_screen.dart';
-import 'package:iso_app/ui/provider/register_screen_provider.dart';
+import 'package:iso_app/ui/provider/login_screen_provider/register_screen_provider.dart';
 
 class BottonsStyle extends StatefulWidget {
   String  text;

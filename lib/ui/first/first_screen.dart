@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:iso_app/theme/bottons.dart';
 import 'package:iso_app/theme/theme.dart';
-import 'package:iso_app/ui/provider/register_screen_provider.dart';
+import 'package:iso_app/ui/provider/login_screen_provider/register_screen_provider.dart';
 import 'package:iso_app/ui/widgers/submit_button.dart';
 
-class SplashScreen extends StatefulWidget {
+class FirstScreen extends StatefulWidget {
   static const String routeName="splash";
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<FirstScreen> createState() => _FirstScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _FirstScreenState extends State<FirstScreen> {
   String customer = "Customer";
   String provider = "Provider";
 

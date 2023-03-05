@@ -2,20 +2,20 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 Widget ThreeIcons (context ,{ Color? color,
-  Color? colorIcon ,
-  IconData? icon ,
-  String? fun }) {
-  return InkWell(
-    onTap: (){
-      Navigator.pushNamed(context, fun!);
-    } ,
-    child: CircleAvatar(
-      radius: 25,
-      backgroundColor:color,
-      child: Icon(icon,color: colorIcon,),
-    ),
-  );
-}
+Color? colorIcon ,
+IconData? icon ,
+String? fun }) {
+    return InkWell(
+      onTap: (){
+          Navigator.pushNamed(context, fun!);
+      } ,
+      child: CircleAvatar(
+        radius: 25,
+        backgroundColor:color,
+        child: Icon(icon,color: colorIcon,),
+      ),
+    );
+  }
 Widget FollowTapsRow({
   String? numOfFollow,
   String? onClick,
@@ -25,7 +25,7 @@ Widget FollowTapsRow({
   return  GestureDetector(
     onTap: (){
       Navigator.pushNamed(context, onClick!);
-    },
+      },
     child: Container(
       padding: EdgeInsets.symmetric(vertical: 10),
       color: Colors.grey[200],
@@ -43,30 +43,30 @@ Widget FollowTapsRow({
 }
 
 Widget MyTextStyle({
-  required String text ,
-  double fontSize =23.0,
-  bool bold = true,
-  Color color=Colors.black,
-  int lines=4,
-  TextAlign align =TextAlign.start
-})
-{
-  return Text(text,
-    textAlign: align,
-    maxLines: lines,
-    overflow: TextOverflow.ellipsis,
-    style: TextStyle(
+    required String text ,
+    double fontSize =23.0,
+     bool bold = true,
+    Color color=Colors.black,
+    int lines=4,
+    TextAlign align =TextAlign.start
+  })
+  {
+    return Text(text,
+      textAlign: align,
+      maxLines: lines,
+      overflow: TextOverflow.ellipsis,
+      style: TextStyle(
       fontSize: fontSize,
       color: color,
       fontWeight: bold? FontWeight.bold :FontWeight.normal,
 
 
     ),);
-}
+  }
 
-Widget bottom(context,{
-  required String title,
-  required String route,
+  Widget bottom(context,{
+   required String title,
+   required String route,
 
 }){
   return   Row(
@@ -95,20 +95,20 @@ Widget bottom(context,{
       ),
     ],
   );
-}
+  }
 
 
-Widget payment (
-    String UrlImage
-    )
-{
-  return  Container(
-    margin: EdgeInsets.symmetric(horizontal: 10),
-    width: 200,
-    height: 150,
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(15),
-    ),
-    child:Image.asset(UrlImage,fit: BoxFit.cover),
-  );
-}
+  Widget payment (
+      String UrlImage
+      )
+  {
+    return  Container(
+      margin: EdgeInsets.symmetric(horizontal: 10),
+      width: 200,
+      height: 150,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+      ),
+      child:Image.asset(UrlImage,fit: BoxFit.cover),
+    );
+  }
